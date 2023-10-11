@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    :is(a, button, input, textarea, select, details, summary):focus-visible {
+        outline: #13183F solid 0.15rem;
+        outline-offset: 0.188rem;
+    }
+}
+
+@layer components {
+    .link-card {
+        outline: none !important;
+    }
+    
+    .link-card::after,
+    .link-card:focus::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+    
+    .link-card:focus::after {
+        outline: white solid 0.2rem;
+        outline-offset: -0.2rem;
+    }
+    
+    .transition-def {
+        @apply transition-all duration-300 ease-in-out;
+    }
+
+    .gradient {
+        background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%)
+    }
+
+    .gradient:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    }
+
+    .b-gradient {
+        background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+
+    .b-gradient:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+
+    .bg-gradient {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    }
+
+    .shadow-card {
+        box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+    }
+
+    .pp-link {
+        padding: 1.1875rem 1.9375rem 1rem 2rem;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .icon::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        left: 2rem;
+        top: -1.5rem;
+    }
+
+    .icon-animation::before {
+        background-image: url(./images/icon-animation.svg);
+    }
+
+    .icon-design::before {
+        background-image: url(./images/icon-design.svg);
+    }
+
+    .icon-photography::before {
+        background-image: url(./images/icon-photography.svg);
+    }
+
+    .icon-crypto::before {
+        background-image: url(./images/icon-crypto.svg);
+    }
+
+    .icon-business::before {
+        background-image: url(./images/icon-business.svg);
+    }
+
+    .pb-pf {
+        padding-block: calc(19vw + 2rem);
+    }
+
+    @screen md {
+        .hero-image {
+            position: absolute;
+            left: 44%;
+            top: -20vw;
+        }
+    }
+
+    @screen lg {
+        .hero-image {
+            width: 65.1644rem;
+            height: 58.5625rem;
+            left: 38%;
+            top: -15.625rem;
+        }
+    }
+
+    @screen xl {
+        .hero-image {
+            left: 37.3125rem;
+        }
+    }
+}
+
+
+@layer utilities {
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+            -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+            -webkit-transition-duration: 0.01ms !important;
+            -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Melvin Aguilar" />
+    <meta
+      name="description"
+      content="Stats Preview Card Component Solution for Frontend Mentor"
+    />
+    <meta name="keywords" content="" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="overflow-x-hidden relative">
+    <header
+      class="md:py-6 p-4 md:px-8 max-w-[73.3125rem] mx-auto flex flex-row justify-between items-center"
+    >
+      <a
+        href="#main"
+        class="bg-black absolute left-0 z-[100] m-3 -translate-x-[150%] p-3 text-white transition focus:translate-x-0"
+      >
+        Skip to main content
+      </a>
+      <a href="#">
+        <img
+          src="./images/logo-dark.svg"
+          alt="Skilled"
+          width="111"
+          height="28"
+        />
+      </a>
+      <a
+        href="#"
+        class="rounded-full text-lg !leading-extra-loose py-3 px-4 md:px-8 md:py-[0.875rem] bg-haiti text-white font-bold hover:bg-waikawa-gray transition-def"
+      >
+        Get Started
+      </a>
+    </header>
+    <main id="main">
+      <div
+        class="p-4 sm:px-8 md:pb-pf lg:pt-[9.1875rem] relative lg:pb-[13.6875rem] max-w-[73.3125rem] mx-auto grid md:grid-cols-2"
+      >
+        <div class="flex gap-[1.875rem] flex-col">
+          <h1
+            class="text-haiti text-3xl sm:text-5xl lg:text-[3.5rem] lg:leading-[4.438rem] font-extrabold"
+          >
+            Maximize skill, minimize budget
+          </h1>
+          <p class="text-oslo-gray text-lg max-w-[33ch]">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a
+            href="#"
+            class="mt-[0.6875rem] gradient transition-def text-lg !leading-extra-loose pp-link block w-fit text-white font-bold rounded-full"
+          >
+            Get Started
+          </a>
+        </div>
+        <picture>
+          <source
+            srcset="./images/image-hero-desktop.png"
+            media="(min-width: 64rem)"
+          />
+          <source
+            srcset="./images/image-hero-tablet.png"
+            media="(min-width: 48rem)"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt="Skilled"
+            width="1126"
+            height="500"
+            class="hero-image | -z-10"
+          />
+        </picture>
+      </div>
+
+      <div class="bg-gradient">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 md:pb-[8.625rem] max-w-[73.375rem] gap-x-[1.875rem] gap-y-[5.0625rem] mx-auto"
+        >
+          <div class="relative gradient p-6 md:px-8 md:py-16 rounded-2xl">
+            <h2
+              class="text-white text-[1.5rem] md:text-[2rem] leading-[2.5rem] font-extrabold"
+            >
+              <a href="#" class="link-card">Check out our most popular courses!</a>
+            </h2>
+          </div>
+          <div
+            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-animation"
+          >
+            <h3 class="text-2xl font-extrabold text-haiti">Animation</h3>
+            <p class="text-oslo-gray mb-[0.1875rem]">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <a
+              href="#"
+              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-design"
+          >
+            <h3 class="text-2xl font-extrabold text-haiti">Design</h3>
+            <p class="text-oslo-gray mb-[0.1875rem]">
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <a
+              href="#"
+              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-photography"
+          >
+            <h3 class="text-2xl font-extrabold text-haiti">Photography</h3>
+            <p class="text-oslo-gray mb-[0.1875rem]">
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <a
+              href="#"
+              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-crypto"
+          >
+            <h3 class="text-2xl font-extrabold text-haiti">Crypto</h3>
+            <p class="text-oslo-gray mb-[0.1875rem]">
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <a
+              href="#"
+              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+            >
+              Get Started
+            </a>
+          </div>
+          <div
+            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-business"
+          >
+            <h3 class="text-2xl font-extrabold text-haiti">Business</h3>
+            <p class="text-oslo-gray mb-[0.1875rem]">
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <a
+              href="#"
+              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-haiti text-white">
+      <div
+        class="p-4 md:p-8 max-w-[73.3125rem] mx-auto flex flex-row justify-between items-center"
+      >
+        <a href="#">
+          <img
+            src="./images/logo-light.svg"
+            alt="Skilled"
+            width="111"
+            height="28"
+          />
+        </a>
+        <a
+          href="#"
+          class="rounded-full transition-def text-lg !leading-extra-loose py-3 px-4  md:px-8 md:py-[0.875rem] b-gradient font-bold"
+        >
+          Get Started
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

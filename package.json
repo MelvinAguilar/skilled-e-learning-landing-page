@@ -1,0 +1,15 @@
+{
+  "name": "skilled-e-learning-landing-page",
+  "version": "1.0.0",
+  "description": "Skilled E learning landing page development coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
