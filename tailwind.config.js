@@ -14,6 +14,15 @@ module.exports = {
         "carnation-pink": "#FFA7C3",
         "waikawa-gray": "#666CA3",
       },
+      padding: {
+        "top-default": "3.9375rem",
+      },
+      gap: {
+        "default": "1.375rem",
+      },
+      maxWidth: {
+        "container": "73.3125rem",
+      },
     },
   },
   plugins: [],

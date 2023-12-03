@@ -17,18 +17,6 @@
   </p>
 </div>
 
-## Experimental version  🧪: Testing web appearance and using Lighthouse to fix issues.  🖥️
-
-# Roadmap.
-
-- [ ] Improve performance.
-- [ ] Improve responsive.
-- [ ] Improve fonts loading.
-- [ ] Implement PWA.
-- [ ] Remove many arbitrary values.
-- [ ] Fix hover/focus state for all links.
-- [ ] Update readme.
-
 
 <!-- Bagdes -->
 <div align="center">
@@ -38,7 +26,7 @@
   </a>
   <!-- Status -->
     <a href="#">
-    <img src="https://img.shields.io/badge/Currenly_Working-orange?style=for-the-badge" alt="Currenly Working">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
   </a>
 
 </div>
@@ -54,3 +42,14 @@
 This is a solution to the [Skilled e-learning landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
+## The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
+
+## Author
+
+- Frontend Mentor - [@melvinaguilar](https://www.frontendmentor.io/profile/melvinaguilar)
+- Linkedin: Melvin Aguilar - [Linkedin: Melvin Aguilar](https://www.linkedin.com/in/melvinaguilar)

@@ -10,24 +10,45 @@
       content="Stats Preview Card Component Solution for Frontend Mentor"
     />
     <meta name="keywords" content="" />
+    <meta name="theme-color" content="#fff" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="./output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Stats preview card component</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
-      rel="stylesheet"
     />
-    <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swapp"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      />
+    </noscript> 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" /> 
   </head>
-  <body class="overflow-x-hidden relative">
+  <body class="overflow-x-hidden relative flex flex-col h-dynamic-screen">
     <header
-      class="md:py-6 p-4 md:px-8 max-w-[73.3125rem] mx-auto flex flex-row justify-between items-center"
+      class="md:py-6 p-4 md:px-8 max-w-container w-full mx-auto flex flex-row justify-between items-center"
     >
       <a
         href="#main"
@@ -50,9 +71,9 @@
         Get Started
       </a>
     </header>
-    <main id="main">
+    <main id="main" class="mt-12 md:m-0 flex-1">
       <div
-        class="p-4 sm:px-8 md:pb-pf lg:pt-[9.1875rem] relative lg:pb-[13.6875rem] max-w-[73.3125rem] mx-auto grid md:grid-cols-2"
+        class="p-4 sm:px-8 md:pb-pf lg:pt-[9.1875rem] relative lg:pb-[13.6875rem] max-w-container mx-auto grid md:grid-cols-2"
       >
         <div class="flex gap-[1.875rem] flex-col">
           <h1
@@ -91,33 +112,34 @@
       </div>
 
       <div class="bg-gradient">
-        <div
-          class="grid md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 md:pb-[8.625rem] max-w-[73.375rem] gap-x-[1.875rem] gap-y-[5.0625rem] mx-auto"
+        <ul
+          role="list"
+          class="grid md:grid-cols-2 lg:grid-cols-3 p-4 pb-12 md:p-8 md:pb-[8.625rem] max-w-[73.375rem] gap-x-[1.875rem] gap-y-[5.0625rem] mx-auto"
         >
-          <div class="relative gradient p-6 md:px-8 md:py-16 rounded-2xl">
+          <li role="listitem" class="relative gradient p-6 md:px-8 md:py-16 rounded-2xl" >
             <h2
               class="text-white text-[1.5rem] md:text-[2rem] leading-[2.5rem] font-extrabold"
             >
               <a href="#" class="link-card">Check out our most popular courses!</a>
             </h2>
-          </div>
-          <div
-            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-animation"
+          </l>
+          <li role="listitem"
+            class="px-8 bg-whitae pt-top-default pb-10 shadow-card rounded-2xl text-lg flex flex-col gap-default icon icon-animation"
           >
             <h3 class="text-2xl font-extrabold text-haiti">Animation</h3>
-            <p class="text-oslo-gray mb-[0.1875rem]">
+            <p class="text-oslo-gray mb-[0.1875rem] max-w-[21ch]">
               Learn the latest animation techniques to create stunning motion
               design and captivate your audience.
             </p>
             <a
               href="#"
-              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+              class="font-bold mt-auto w-fit text-french-gray transition-def hover:text-carnation-pink"
             >
               Get Started
             </a>
-          </div>
-          <div
-            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-design"
+          </li>
+          <li role="listitem"
+            class="px-8 bg-white pt-top-default pb-10 shadow-card rounded-2xl text-lg flex flex-col gap-default icon icon-design"
           >
             <h3 class="text-2xl font-extrabold text-haiti">Design</h3>
             <p class="text-oslo-gray mb-[0.1875rem]">
@@ -126,13 +148,13 @@
             </p>
             <a
               href="#"
-              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+              class="font-bold mt-auto w-fit text-french-gray transition-def hover:text-carnation-pink"
             >
               Get Started
             </a>
-          </div>
-          <div
-            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-photography"
+          </li>
+          <li role="listitem"
+            class="px-8 bg-white pt-top-default pb-10 shadow-card rounded-2xl text-lg flex flex-col gap-default icon icon-photography"
           >
             <h3 class="text-2xl font-extrabold text-haiti">Photography</h3>
             <p class="text-oslo-gray mb-[0.1875rem]">
@@ -141,13 +163,13 @@
             </p>
             <a
               href="#"
-              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+              class="font-bold mt-auto w-fit text-french-gray transition-def hover:text-carnation-pink"
             >
               Get Started
             </a>
-          </div>
-          <div
-            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-crypto"
+          </li>
+          <li role="listitem"
+            class="px-8 bg-white pt-top-default pb-10 shadow-card rounded-2xl text-lg flex flex-col gap-default icon icon-crypto"
           >
             <h3 class="text-2xl font-extrabold text-haiti">Crypto</h3>
             <p class="text-oslo-gray mb-[0.1875rem]">
@@ -156,13 +178,13 @@
             </p>
             <a
               href="#"
-              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+              class="font-bold mt-auto w-fit text-french-gray transition-def hover:text-carnation-pink"
             >
               Get Started
             </a>
-          </div>
-          <div
-            class="px-8 bg-white pt-[3.9375rem] pb-[2.5rem] shadow-card rounded-2xl text-lg flex flex-col gap-[1.375rem] icon icon-business"
+          </li>
+          <li role="listitem"
+            class="px-8 bg-white pt-top-default pb-10 shadow-card rounded-2xl text-lg flex flex-col gap-default icon icon-business"
           >
             <h3 class="text-2xl font-extrabold text-haiti">Business</h3>
             <p class="text-oslo-gray mb-[0.1875rem]">
@@ -171,17 +193,17 @@
             </p>
             <a
               href="#"
-              class="font-bold mt-auto text-french-gray transition-def hover:text-carnation-pink"
+              class="font-bold mt-auto w-fit text-french-gray transition-def hover:text-carnation-pink"
             >
               Get Started
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </main>
     <footer class="bg-haiti text-white">
       <div
-        class="p-4 md:p-8 max-w-[73.3125rem] mx-auto flex flex-row justify-between items-center"
+        class="p-4 md:p-8 max-w-container mx-auto flex flex-row justify-between items-center"
       >
         <a href="#">
           <img
@@ -199,5 +221,15 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(function () {
+            console.log("Service Worker Registered");
+          });
+      }
+    </script>
   </body>
 </html>

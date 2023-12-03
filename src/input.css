@@ -8,8 +8,17 @@
     }
 
     :is(a, button, input, textarea, select, details, summary):focus-visible {
-        outline: #13183F solid 0.15rem;
-        outline-offset: 0.188rem;
+        outline: #13183F solid 0.35rem;
+        outline-offset: 0.4rem;
+    }
+
+    footer :is(a, button, input, textarea, select, details, summary):focus-visible {
+        outline-color: #FFFFFF;
+    }
+
+    .h-dynamic-screen {
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 }
 
@@ -17,41 +26,59 @@
     .link-card {
         outline: none !important;
     }
-    
+
     .link-card::after,
     .link-card:focus::after {
         content: "";
         position: absolute;
         inset: 0;
     }
-    
+
     .link-card:focus::after {
-        outline: white solid 0.2rem;
-        outline-offset: -0.2rem;
+        border: 0.35rem solid #13183F;
+        border-radius: 0.5rem;
     }
-    
+
     .transition-def {
         @apply transition-all duration-300 ease-in-out;
     }
 
     .gradient {
-        background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%)
+        background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+        @apply relative z-[1];
     }
 
-    .gradient:hover {
+    .gradient::before {
+        content: '';
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        @apply rounded-2xl transition-opacity inset-0 duration-300 opacity-0 ease-in-out absolute -z-10;
+    }
+
+    .gradient:hover::before {
+        opacity: 1;
     }
 
     .b-gradient {
         background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        @apply relative z-[1];
     }
 
-    .b-gradient:hover {
+    .b-gradient::before {
+        content: '';
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        @apply rounded-2xl transition-opacity inset-0 duration-300 opacity-0 ease-in-out absolute -z-10;
+    }
+
+    .b-gradient:hover::before {
+        opacity: 1;
     }
 
     .bg-gradient {
         background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    }
+
+    a.b-gradient::before , a.gradient::before  {
+        @apply rounded-full;
     }
 
     .shadow-card {
