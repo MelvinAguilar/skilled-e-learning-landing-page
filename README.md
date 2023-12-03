@@ -6,14 +6,14 @@
 
   <h2 align="center">Skilled e-learning landing page</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://skilled-e-learning-landing-page-hdez.vercel.app/"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q">View Demo</a>
+    <a href="https://skilled-e-learning-landing-page-hdez.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/MelvinAguilar/" target="_blank">Report Bug</a>
+    <a href="https://github.com/MelvinAguilar/skilled-e-learning-landing-page/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/MelvinAguilar/" target="_blank">Request Feature</a>
+    <a href="https://github.com/MelvinAguilar/skilled-e-learning-landing-page/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -48,6 +48,12 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
+
+<h2 align="center">Links</h2>
+
+- Solution URL: [Skilled e-learning landing page (Tailwind CSS) | Frontend Mentor](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-tailwind-css-PB-BxGZ5Sq)
+- Live Site URL: [https://skilled-e-learning-landing-page-hdez.vercel.app/](https://skilled-e-learning-landing-page-hdez.vercel.app/)
+
 
 ## Author
 
